@@ -340,9 +340,9 @@ homepage, tagpage, searchpage.
 
 <div style="text-align:center"><img src="images/htmxpag.gif" /></div>
 
-How does pagination work?
+#### How does pagination work?
 
-<div style="text-align:center"><img src="images/htmx_pagination.png" /></div>
+<div style="text-align:center"><img src="images/htmx_pagination.png" width="572" height="688"/></div>
 
 Made using [ZenFlowchart](https://www.zenflowchart.com/)
 
