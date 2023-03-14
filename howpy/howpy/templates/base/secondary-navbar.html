@@ -1,0 +1,39 @@
+{% load static %}
+
+
+<style>
+    #sm-logo-out {
+        position: relative;
+        width: 76px;
+        height: 76px;
+        top: 50%;
+    }
+
+    #sm-logo-in {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        top: 18%;
+        left: 50%
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .container,
+        .container-sm {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg py-1 align-items-start pt-lg-4 sticky-top">
+    <div class="container py-2 sticky-top">
+        <a class="navbar-brand m-0" href="/">
+            <div id="sm-logo-out">
+                <img src="{% static 'images/W_v2.png' %}" class="img-fluid float-end">
+                <div id="sm-logo-in">
+                </div>
+            </div>
+        </a>
+    </div>
+</nav>

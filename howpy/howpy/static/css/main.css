@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.test {
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.code {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.code-block-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.code-block {
+  border: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre {
+  font-size: 15px;
+  font-family: Consolas, monospace !important;
+  line-height: 1.6;
+  padding: 10px;
+  border: none;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+}
+
+pre code {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+pre.prettyprint {
+  background: linear-gradient(to bottom, #F9D89C, #F5B75F);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+pre.prettyprint code {
+  font-family: Consolas, monospace !important;
+  background: linear-gradient(to bottom, #444444, #999999);
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-12 {
+    font-size: 0.75rem
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.fs-15 {
+    font-size: 0.9375rem;
+}
+
+.infscroll-title {
+    font-size: 22px;
+    letter-spacing: -0.6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .infscroll-title {
+        font-size: 0.9375rem;
+        letter-spacing: -0.0px;
+    }
+
+    .infscroll-author,
+    .infscroll-date {
+        font-size: 0.8125rem;
+    }
+
+}

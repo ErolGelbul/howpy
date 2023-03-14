@@ -1,0 +1,83 @@
+{% extends "../base/3-col-template.html" %}
+
+{% block content-left %}
+{% include "base/secondary-navbar.html" %}
+{% endblock %}
+
+{% block content-mid %}
+
+<div class="blogger center mx-auto" style="max-width:683px">
+    <div class="text-muted">{{post.author}}</div>
+    <div class="text-muted pb-5">{{post.updated_at|date:"M d"}}</div>
+    <h1 class="fw-bold pb-2">{{post.title}}</h1>
+    <h2 class="text-muted fs-4 pb-4">{{post.subtitle}}</h2>
+    <pre><code class="python">{{ post.code }}</code></pre>
+    <div class="post">
+        {{post.content | markdown | safe}}
+    </div>
+</div>
+
+<head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+
+<style>
+    pre code {
+        background: linear-gradient(to right, #FFC312, #EE5A24);
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, #ffd412, #eeeb24) 30;
+    }
+
+    pre code:hover {
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, #eea424, #eecc24) 30;
+    }
+
+    .post {
+        padding: 20px;
+    }
+
+    .blogger h1 {
+        letter-spacing: -0.6px;
+    }
+
+    .post h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .post p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.0925rem;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+    }
+</style>
+
+{% endblock %}
+
+{% block content-right %}
+{% sidebar_tag_cloud %}
+
+<div class="col-12">
+    <div class="pb-3">More from {{post.author}}</div>
+    {% for post in related %}
+    <a class="text-decoration-none" href="{{post.get_absolute_url}}">
+        <div class="card mb-3 border-0 ps-1">
+            <div class="row">
+                <div class="col-9 pe-2">
+                    <span class="text-dark small">{{post.author}}</span>
+                    <h1 class="mb-1 fs-6 p-0 text-dark fw-bold">{{post.title|truncatechars:80}}</h1>
+                </div>
+                <div class="col-3">
+                    <img src="../static/images/algo_image.png" class="img-fluid float-end">
+                </div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
