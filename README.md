@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<div style="text-align:center"><img src="images/cover_imagev2.jpg" /></div>
+<div style="text-align:center"><img src="images/cover_imagev4.jpg" /></div>
 
 ## 1. Introduction
 
