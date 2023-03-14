@@ -340,6 +340,12 @@ homepage, tagpage, searchpage.
 
 <div style="text-align:center"><img src="images/htmxpag.gif" /></div>
 
+How does pagination work?
+
+<div style="text-align:center"><img src="images/htmx_pagination.png" /></div>
+
+Made using [ZenFlowchart](https://www.zenflowchart.com/)
+
 #### 4.1.2 Layout Adaptation
 
 The webpage automatically adjusts when the page shrinks, which means the layout
