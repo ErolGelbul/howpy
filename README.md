@@ -168,7 +168,7 @@ Run inside the directory containing `manage.py` file:
 python manage.py runserver
 ```
 
-## 2.2.5 Run the migrations
+## 2.2.6 Run the migrations
 
 Prepare:
 
